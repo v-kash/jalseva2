@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #1e3a8a;
+  --color-primary-light: #1d4ed8;
+  --color-primary-bright: #3b82f6;
+  --color-sky-light: #eff6ff;
+  --color-sky-medium: #dbeafe;
+  --color-dark-blue: #172554;
+  --color-navy: #0f172a;
+  --color-text-dark: #111827;
+  --color-text-body: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+/* Script/handwriting text style */
+.script-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+}
+
+/* Decorative water drop */
+.water-drop {
+  background: linear-gradient(135deg, #93c5fd, #3b82f6);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+/* Gradient overlays */
+.blue-gradient-overlay {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(29, 78, 216, 0.85));
+}
+
+/* Stat card hover */
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+}
+
+/* Ambassador photo */
+.ambassador-photo {
+  transition: transform 0.3s ease;
+}
+.ambassador-photo:hover {
+  transform: scale(1.05);
 }
