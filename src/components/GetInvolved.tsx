@@ -40,14 +40,14 @@ export default function GetInvolved() {
             There&apos;s more than one way to create change.
           </h2>
 
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
               <Droplets className="w-6 h-6 text-primary" />
             </div>
             <span className="text-xl font-extrabold text-white tracking-tight">
               JALSEVA
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Right: open list, divided by lines, no boxes */}
