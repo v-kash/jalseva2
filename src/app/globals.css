@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1e3a8a;
-  --color-primary-light: #1d4ed8;
-  --color-primary-bright: #3b82f6;
-  --color-sky-light: #eff6ff;
-  --color-sky-medium: #dbeafe;
-  --color-dark-blue: #172554;
-  --color-navy: #0f172a;
+  --color-primary: #1677bc;
+  --color-primary-light: #1e8bd0;
+  --color-primary-bright: #2aa8e2;
+  --color-sky-light: #ebf6fd;
+  --color-sky-medium: #d3ecfa;
+  --color-dark-blue: #0c3c62;
+  --color-navy: #082a45;
   --color-text-dark: #111827;
   --color-text-body: #1f2937;
   --color-text-muted: #6b7280;
@@ -33,13 +33,13 @@ body {
 
 /* Decorative water drop */
 .water-drop {
-  background: linear-gradient(135deg, #93c5fd, #3b82f6);
+  background: linear-gradient(135deg, #7cc6ee, #2aa8e2);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 /* Gradient overlays */
 .blue-gradient-overlay {
-  background: linear-gradient(135deg, rgba(30, 58, 138, 0.9), rgba(29, 78, 216, 0.85));
+  background: linear-gradient(135deg, rgba(22, 119, 188, 0.9), rgba(42, 168, 226, 0.85));
 }
 
 /* Stat card hover */
@@ -48,7 +48,7 @@ body {
 }
 .stat-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+  box-shadow: 0 8px 25px rgba(22, 119, 188, 0.15);
 }
 
 /* Ambassador photo */

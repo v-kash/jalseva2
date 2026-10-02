@@ -13,7 +13,7 @@ function GlobeDrop({ className = "" }: { className?: string }) {
     <svg
       viewBox="0 0 130 190"
       fill="none"
-      stroke="#8dbdf0"
+      stroke="#7cc6ee"
       strokeWidth="1.6"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -42,9 +42,9 @@ export default function OurWork() {
         </div>
 
         {/* Right - Content panel */}
-        <div className="relative bg-gradient-to-br from-[#e8f4ff] to-[#dcedfd] lg:rounded-r-[56px] lg:rounded-tl-none overflow-hidden px-6 py-10 md:px-12 lg:pl-12 lg:pr-0 flex items-center">
+        <div className="relative bg-gradient-to-br from-sky-light to-sky-medium lg:rounded-r-[56px] lg:rounded-tl-none overflow-hidden px-6 py-10 md:px-12 lg:pl-12 lg:pr-0 flex items-center">
           <div className="relative z-10 max-w-md lg:max-w-[420px]">
-            <p className="text-sm font-semibold tracking-[0.15em] uppercase text-primary-light mb-3">
+            <p className="text-sm font-semibold tracking-[0.15em] uppercase text-primary mb-3">
               Our Work
             </p>
 
@@ -80,7 +80,7 @@ export default function OurWork() {
           >
             <path
               d="M30 2C30 2 4 36 4 54a26 26 0 0 0 52 0C56 36 30 2 30 2Z"
-              fill="#c9e3fb"
+              fill="#d3ecfa"
             />
           </svg>
 

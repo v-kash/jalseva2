@@ -8,10 +8,10 @@ export default function BeyondPeople() {
       <div className="relative z-10 px-4 pb-8 pt-12 sm:px-8 md:pt-16 xl:absolute xl:inset-y-0 xl:left-0 xl:flex xl:w-[42%] xl:items-center xl:p-0 xl:pl-[6.5%]">
         <div className="space-y-5 xl:space-y-[1.4vw]">
           <div className="flex items-center gap-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary-light xl:text-[0.8vw]">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary xl:text-[0.8vw]">
               Beyond People
             </p>
-            <span className="h-px w-16 bg-blue-400/60 xl:w-[8vw]" />
+            <span className="h-px w-16 bg-primary-bright/60 xl:w-[8vw]" />
           </div>
 
           <h2 className="text-4xl font-extrabold leading-[1.05] tracking-tight text-dark-blue sm:text-5xl xl:text-[3.7vw]">

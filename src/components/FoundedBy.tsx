@@ -26,7 +26,7 @@ export default function FoundedBy() {
 
           {/* Middle - Bio */}
           <div className="text-center lg:text-left">
-            <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary-light mb-2">
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-2">
               Founded By
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-dark-blue leading-tight">

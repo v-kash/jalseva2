@@ -15,7 +15,7 @@ export default function Ambassadors() {
     <section id="ambassadors" className="py-16 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary-light mb-8">
+        <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-8">
           JalSeva Ambassadors
         </p>
 

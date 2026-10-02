@@ -1,4 +1,4 @@
-import { Droplets } from "lucide-react";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -16,13 +16,14 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Logo & Description */}
           <div className="space-y-4">
-            <a href="#home" className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
-                <Droplets className="w-5 h-5 text-blue-300" />
-              </div>
-              <span className="text-xl font-extrabold tracking-tight">
-                JALSEVA
-              </span>
+            <a href="#home" className="inline-block rounded-lg  py-2">
+              <Image
+                src="/whitelogo.png"
+                alt="Jalseva"
+                width={160}
+                height={40}
+                className="h-10 w-auto object-contain"
+              />
             </a>
             <p className="text-xs text-blue-200 tracking-wide">
               Refill · Reuse · Reduce

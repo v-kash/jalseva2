@@ -32,7 +32,7 @@ function DropIcon({ className = "" }: { className?: string }) {
       className={className}
       strokeWidth={1.5}
       fill="url(#dropGradient)"
-      stroke="#1f6fd6"
+      stroke="#1677bc"
     />
   );
 }
@@ -83,8 +83,8 @@ export default function ThreePillars() {
       <svg width="0" height="0" className="absolute" aria-hidden="true">
         <defs>
           <linearGradient id="dropGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#5ab2f7" />
-            <stop offset="100%" stopColor="#1f6fd6" />
+            <stop offset="0%" stopColor="#2aa8e2" />
+            <stop offset="100%" stopColor="#1677bc" />
           </linearGradient>
         </defs>
       </svg>
@@ -93,7 +93,7 @@ export default function ThreePillars() {
         {/* Top Section */}
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 mb-12 md:mb-14">
           <div>
-            <p className="text-sm font-medium tracking-[0.18em] uppercase text-primary-light mb-3">
+            <p className="text-sm font-medium tracking-[0.18em] uppercase text-primary mb-3">
               What We Stand For
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-dark-blue">
@@ -124,7 +124,7 @@ export default function ThreePillars() {
                          md:[&:not(:first-child)]:before:w-px
                          md:[&:not(:first-child)]:before:bg-blue-100"
             >
-              <div className="w-[104px] h-[104px] mx-auto mb-6 rounded-full bg-[#d6eafc] flex items-center justify-center">
+              <div className="w-[104px] h-[104px] mx-auto mb-6 rounded-full bg-sky-medium flex items-center justify-center">
                 <PillarIcon type={pillar.icon} />
               </div>
 
