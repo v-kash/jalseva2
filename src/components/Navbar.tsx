@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Droplets, Menu, X, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { Menu, X, ArrowRight } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -20,14 +21,16 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18">
-          {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center">
-              <Droplets className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-extrabold tracking-tight text-primary">
-              JALSEVA
-            </span>
+          {/* logo2 */}
+          <a href="#home" className="flex items-center">
+            <Image
+              src="/logo2.png"
+              alt="Jalseva"
+              width={160}
+              height={40}
+              priority
+              className="h-10 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -47,7 +50,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <a
             href="#contact"
-            className="hidden lg:inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-colors"
+            className="hidden lg:inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold text-white bg-[#1677BC] rounded-full hover:bg-[#10517e] transition-colors"
           >
             Contact Us
             <ArrowRight className="w-4 h-4" />

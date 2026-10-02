@@ -72,8 +72,8 @@ const pillars: Pillar[] = [
 function PillarIcon({ type }: { type: IconType }) {
   if (type === "drop") return <DropIcon className="w-11 h-11" />;
   if (type === "leaf")
-    return <Leaf className="w-11 h-11 text-[#1d4fa8]" strokeWidth={1.6} />;
-  return <CommunityIcon className="w-14 h-14 text-[#1d4fa8]" />;
+    return <Leaf className="w-11 h-11 text-primary" strokeWidth={1.6} />;
+  return <CommunityIcon className="w-14 h-14 text-primary" />;
 }
 
 export default function ThreePillars() {
@@ -93,17 +93,17 @@ export default function ThreePillars() {
         {/* Top Section */}
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 mb-12 md:mb-14">
           <div>
-            <p className="text-sm font-medium tracking-[0.18em] uppercase text-[#3b8fe8] mb-3">
+            <p className="text-sm font-medium tracking-[0.18em] uppercase text-primary-light mb-3">
               What We Stand For
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-[#0a2a6c]">
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-dark-blue">
               Three Pillars for a
               <br />
               Cleaner, Healthier Tomorrow.
             </h2>
           </div>
           <div className="flex lg:items-start lg:pt-6 lg:pl-8">
-            <p className="text-[#4b5563] leading-relaxed text-base max-w-md">
+            <p className="text-text-muted leading-relaxed text-base max-w-md">
               JalSeva works at the intersection of water, sustainability and
               community action to create lasting impact.
             </p>
@@ -128,15 +128,15 @@ export default function ThreePillars() {
                 <PillarIcon type={pillar.icon} />
               </div>
 
-              <h3 className="text-base font-bold tracking-wide text-[#0a2a8c] mb-3">
+              <h3 className="text-base font-bold tracking-wide text-primary mb-3">
                 {pillar.title}
               </h3>
 
-              <p className="text-[#4b5563] text-sm leading-relaxed mb-5 max-w-[260px] mx-auto">
+              <p className="text-text-muted text-sm leading-relaxed mb-5 max-w-[260px] mx-auto">
                 {pillar.description}
               </p>
 
-              <p className="text-[#0a2a8c] font-bold text-sm leading-relaxed">
+              <p className="text-primary font-bold text-sm leading-relaxed">
                 {pillar.tagline.map((line, i) => (
                   <span key={i} className="block">
                     {line}

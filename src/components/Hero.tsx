@@ -21,6 +21,7 @@ export default function Hero() {
 
       {/* Gradient Overlay for text readability */}
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-white via-white/5 to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 z-10 bg-white/60 lg:hidden pointer-events-none"></div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-5rem)]">
@@ -33,7 +34,7 @@ export default function Hero() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.08] text-text-dark">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.08] text-dark-blue">
               Clean Water
               <br />
               <span className="text-primary">for a Brighter</span>

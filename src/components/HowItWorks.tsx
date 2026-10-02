@@ -36,10 +36,10 @@ export default function HowItWorks() {
         <div className="grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-16 items-center">
           {/* Left */}
           <div>
-            <p className="text-xs font-bold tracking-[0.2em] uppercase text-text-muted mb-4">
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary-light mb-4">
               Our It Works
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-[#0a2a6c]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-dark-blue">
               From a Bottle
               <br />
               to a Bigger Change.

@@ -24,7 +24,7 @@ const stats = [
 export default function ImpactNumbers() {
   return (
     <section id="impact" className=" bg-white">
-      <div className=" max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         
 
         <div className="grid grid-cols-2 gap-x-4 gap-y-6  border border-sky-100 bg-white px-4 py-5 sm:grid-cols-3 lg:grid-cols-5 lg:gap-0 lg:divide-x lg:divide-sky-100 lg:px-2">

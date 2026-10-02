@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
  * or imported assets).
  */
 const BOY_IMAGE = "/jalseva.jpeg";
-const STATION_IMAGE = "/images/our-work-station.jpg";
+const STATION_IMAGE = "/Watercooler.png";
 
 // Outlined water drop with a globe inside (decorative)
 function GlobeDrop({ className = "" }: { className?: string }) {
@@ -44,17 +44,17 @@ export default function OurWork() {
         {/* Right - Content panel */}
         <div className="relative bg-gradient-to-br from-[#e8f4ff] to-[#dcedfd] lg:rounded-r-[56px] lg:rounded-tl-none overflow-hidden px-6 py-10 md:px-12 lg:pl-12 lg:pr-0 flex items-center">
           <div className="relative z-10 max-w-md lg:max-w-[420px]">
-            <p className="text-sm font-semibold tracking-[0.15em] uppercase text-[#3b8fe8] mb-3">
+            <p className="text-sm font-semibold tracking-[0.15em] uppercase text-primary-light mb-3">
               Our Work
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-[#0a2a6c] mb-5">
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-dark-blue mb-5">
               Water Access.
               <br />
               Brighter Tomorrows.
             </h2>
 
-            <p className="text-[#374151] leading-relaxed text-[15px] mb-7">
+            <p className="text-text-body leading-relaxed text-[15px] mb-7">
               JalSeva combines reusable bottles with accessible filtered-water
               infrastructure, encouraging people to refill rather than
               repeatedly purchase single-use bottled water.
@@ -62,7 +62,7 @@ export default function OurWork() {
 
             <a
               href="#impact"
-              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-[#0a2a8c] rounded-full hover:bg-[#08216e] transition-colors"
+              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-colors"
             >
               Learn More
               <ArrowRight className="w-4 h-4" />
@@ -85,7 +85,7 @@ export default function OurWork() {
           </svg>
 
           {/* Circular inset photo */}
-          <div className="hidden lg:block absolute -right-2 bottom-3 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-md">
+          <div className="hidden lg:block absolute right-0   bottom-3 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-md">
             <img
               src={STATION_IMAGE}
               alt="Filtered water refill station"

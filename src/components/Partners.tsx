@@ -22,10 +22,10 @@ export default function Partners() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="space-y-4">
-            <p className="text-xs font-bold tracking-[0.2em] uppercase text-text-muted">
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary-light">
               Our Collaboration Partners
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-text-dark">
+            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-dark-blue">
               Change Grows
               <br />
               Through Collaboration.

@@ -1,25 +1,29 @@
-import { Users, Handshake, Globe, Share2, Droplets } from "lucide-react";
+import { Users, Handshake, Globe, Share2, Droplets, ArrowUpRight } from "lucide-react";
 
-const cards = [
+const ways = [
   {
     icon: Users,
     title: "Become an Ambassador",
     description: "Join a network of young people.",
+    href: "#ambassador",
   },
   {
     icon: Handshake,
     title: "Collaborate",
     description: "Bring initiatives to your organization or community.",
+    href: "#collaborate",
   },
   {
     icon: Globe,
     title: "Community Initiatives",
     description: "Explore water and sustainability solutions.",
+    href: "#initiatives",
   },
   {
     icon: Share2,
     title: "Spread the Message",
     description: "Follow, share and help create awareness.",
+    href: "#spread",
   },
 ];
 
@@ -27,59 +31,55 @@ export default function GetInvolved() {
   return (
     <section
       id="get-involved"
-      className="relative py-16 md:py-20 bg-gradient-to-br from-primary via-primary-light to-primary-bright overflow-hidden"
+      className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-primary via-primary-light to-primary-bright"
     >
-      {/* Background decorations */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 right-10 w-40 h-40 water-drop" />
-        <div className="absolute bottom-10 left-20 w-28 h-28 water-drop" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-10">
-          <p className="text-xs font-bold tracking-[0.2em] uppercase text-blue-200 mb-4">
-            Get Involved
-          </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white max-w-xl">
-            There&apos;s More Than One Way to Create Change.
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16">
+        {/* Left: statement + brand mark */}
+        <div className="lg:col-span-5 flex flex-col justify-between gap-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight text-white">
+            There&apos;s more than one way to create change.
           </h2>
-        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 items-start">
-          {/* Cards */}
-          {cards.map((card, i) => {
-            const Icon = card.icon;
-            return (
-              <div
-                key={i}
-                className="p-5 md:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all group cursor-pointer"
-              >
-                <div className="w-10 h-10 mb-3 rounded-lg bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                  <Icon className="w-5 h-5 text-white" />
-                </div>
-                <h3 className="text-sm font-bold text-white mb-1">
-                  {card.title}
-                </h3>
-                <p className="text-xs text-blue-100 leading-relaxed">
-                  {card.description}
-                </p>
-              </div>
-            );
-          })}
-
-          {/* Logo Card */}
-          <div className="p-5 md:p-6 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-14 h-14 mx-auto mb-2 rounded-full bg-white flex items-center justify-center">
-                <Droplets className="w-7 h-7 text-primary" />
-              </div>
-              <p className="text-lg font-extrabold text-white tracking-tight">
-                JALSEVA
-              </p>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
+              <Droplets className="w-6 h-6 text-primary" />
             </div>
+            <span className="text-xl font-extrabold text-white tracking-tight">
+              JALSEVA
+            </span>
           </div>
         </div>
+
+        {/* Right: open list, divided by lines, no boxes */}
+        <ul className="lg:col-span-7 border-t border-white/30">
+          {ways.map(({ icon: Icon, title, description, href }) => (
+            <li key={title} className="border-b border-white/30">
+              <a
+                href={href}
+                className="group relative flex items-center gap-5 md:gap-8 py-6 md:py-8 overflow-hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+              >
+                {/* Water level rises on hover */}
+                <span
+                  aria-hidden
+                  className="absolute inset-x-0 bottom-0 h-full translate-y-full bg-white/10 transition-transform duration-500 ease-out group-hover:translate-y-0 motion-reduce:transition-none"
+                />
+
+                <Icon className="relative w-7 h-7 md:w-8 md:h-8 shrink-0 text-blue-100 transition-transform duration-300 group-hover:scale-110" />
+
+                <div className="relative flex-1">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
+                    {title}
+                  </h3>
+                  <p className="mt-1 text-sm md:text-base text-blue-100 max-w-md">
+                    {description}
+                  </p>
+                </div>
+
+                <ArrowUpRight className="relative w-6 h-6 md:w-7 md:h-7 text-white opacity-50 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
