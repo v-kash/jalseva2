@@ -57,11 +57,13 @@ export default function OurWork() {
             <p className="text-text-body leading-relaxed text-[15px] mb-7">
               JalSeva combines reusable bottles with accessible filtered-water
               infrastructure, encouraging people to refill rather than
-              repeatedly purchase single-use bottled water.
+              repeatedly purchase single-use bottled water. In schools, that
+              means clean tanks, filters and coolers that are looked after all
+              year.
             </p>
 
             <a
-              href="#impact"
+              href="#schools"
               className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-colors"
             >
               Learn More

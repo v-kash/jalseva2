@@ -1,6 +1,13 @@
-import { Users, Handshake, Globe, Share2, Droplets, ArrowUpRight } from "lucide-react";
+import { Users, Handshake, HeartHandshake, Globe, Share2, Droplets, ArrowUpRight } from "lucide-react";
 
 const ways = [
+  {
+    icon: HeartHandshake,
+    title: "Support a School Need",
+    description:
+      "Support a specific school requirement through funding, materials or services — including water filters, coolers, tank cleaning, benches and sanitation",
+    href: "#contact",
+  },
   {
     icon: Users,
     title: "Become an Ambassador",
@@ -40,6 +47,13 @@ export default function GetInvolved() {
             There&apos;s more than one way to create change.
           </h2>
 
+          <p className="text-base md:text-lg text-blue-100 leading-relaxed max-w-md">
+            Installing a filter is only the beginning. Keeping tanks, filters
+            and coolers clean is our biggest need today. We don&apos;t go person
+            to person collecting money. When we see a genuine need, we find
+            someone who wants to support exactly that.
+          </p>
+
           {/* <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
               <Droplets className="w-6 h-6 text-primary" />
@@ -75,7 +89,7 @@ export default function GetInvolved() {
                   </p>
                 </div>
 
-                <ArrowUpRight className="relative w-6 h-6 md:w-7 md:h-7 text-white opacity-50 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                
               </a>
             </li>
           ))}

@@ -4,7 +4,7 @@ const stats = [
     label: "Single-use plastic bottles potentially avoided",
   },
   {
-    value: "16.5 tonnes",
+    value: "16.5 Tonnes",
     label: "Plastic packaging potentially avoided",
   },
   {
@@ -12,7 +12,11 @@ const stats = [
     label: "Reusable steel bottles distributed",
   },
   {
-    value: "20",
+    value: "416",
+    label: "Schools with 3,000+ classrooms",
+  },
+  {
+    value: "38",
     label: "Water filter coolers installed",
   },
   {
@@ -27,7 +31,7 @@ export default function ImpactNumbers() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         
 
-        <div className="grid grid-cols-2 gap-x-4 gap-y-6  border border-sky-100 bg-white px-4 py-5 sm:grid-cols-3 lg:grid-cols-5 lg:gap-0 lg:divide-x lg:divide-sky-100 lg:px-2">
+        <div className="grid grid-cols-2 gap-x-4 gap-y-6  border border-sky-100 bg-white px-4 py-5 sm:grid-cols-3 lg:grid-cols-6 lg:gap-0 lg:divide-x lg:divide-sky-100 lg:px-2">
           {stats.map((stat) => (
             <div key={stat.label} className="px-3 text-center">
               <p className="text-xl md:text-2xl font-extrabold text-primary">
