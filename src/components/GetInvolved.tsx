@@ -1,36 +1,29 @@
-import { Users, Handshake, HeartHandshake, Globe, Share2, Droplets, ArrowUpRight } from "lucide-react";
+import { Users, Handshake, Globe, Share2 } from "lucide-react";
 
 const ways = [
-  {
-    icon: HeartHandshake,
-    title: "Support a School Need",
-    description:
-      "Support a specific school requirement through funding, materials or services — including water filters, coolers, tank cleaning, benches and sanitation",
-    href: "#contact",
-  },
   {
     icon: Users,
     title: "Become an Ambassador",
     description: "Join a network of young people.",
-    href: "#ambassador",
+    href: "#contact",
   },
   {
     icon: Handshake,
     title: "Collaborate",
     description: "Bring initiatives to your organization or community.",
-    href: "#collaborate",
+    href: "#contact",
   },
   {
     icon: Globe,
     title: "Community Initiatives",
     description: "Explore water and sustainability solutions.",
-    href: "#initiatives",
+    href: "#contact",
   },
   {
     icon: Share2,
     title: "Spread the Message",
     description: "Follow, share and help create awareness.",
-    href: "#spread",
+    href: "#contact",
   },
 ];
 
@@ -49,9 +42,7 @@ export default function GetInvolved() {
 
           <p className="text-base md:text-lg text-blue-100 leading-relaxed max-w-md">
             Installing a filter is only the beginning. Keeping tanks, filters
-            and coolers clean is our biggest need today. We don&apos;t go person
-            to person collecting money. When we see a genuine need, we find
-            someone who wants to support exactly that.
+            and coolers clean is our biggest need today.
           </p>
 
           {/* <div className="flex items-center gap-3">

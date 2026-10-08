@@ -37,7 +37,7 @@ export default function HowItWorks() {
           {/* Left */}
           <div>
             <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-4">
-              Our It Works
+              Our Works
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-dark-blue">
               From a Bottle

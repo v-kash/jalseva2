@@ -36,10 +36,10 @@ export default function FoundedBy() {
               Founder, JalSeva
             </p>
             <p className="mt-4 text-sm md:text-[15px] text-text-muted leading-relaxed max-w-md mx-auto lg:mx-0">
-              JalSeva was founded by Ved Kedia with a vision to encourage
-              cleaner water access, reduce dependence on single-use plastic and
-              inspire young people to participate in creating sustainable
-              communities.
+              JalSeva was founded by Ved Kedia with a vision to make cleaner
+              water access more practical, reduce dependence on single-use
+              plastic and inspire young people to take part in building more
+              sustainable communities.
             </p>
           </div>
 

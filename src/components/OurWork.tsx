@@ -1,98 +1,87 @@
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { MapPin } from "lucide-react";
 
-/**
- * Replace these with your real image paths (e.g. files in /public/images
- * or imported assets).
- */
-const BOY_IMAGE = "/jalseva.jpeg";
-const STATION_IMAGE = "/Watercooler.png";
-
-// Outlined water drop with a globe inside (decorative)
-function GlobeDrop({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 130 190"
-      fill="none"
-      stroke="#7cc6ee"
-      strokeWidth="1.6"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      {/* drop outline */}
-      <path d="M65 4C65 4 12 78 12 126a53 53 0 0 0 106 0C118 78 65 4 65 4Z" />
-      {/* globe */}
-      
-    </svg>
-  );
-}
+const projects = [
+  {
+    period: "Since 2022",
+    title: "Steel Bottle Distribution",
+    description:
+      "Bottles distributed to workers, students and marginalized communities as a dignified, reusable alternative to single-use plastic.",
+    location: "UAE & India",
+  },
+  {
+    period: "From 2025",
+    title: "School Filter-Coolers",
+    description:
+      "Built with Manav Mandir Foundation after a visit to a government school in Indore revealed no access to clean, cooled water. Now serving schools and community hubs.",
+    location: "Indore · Kolkata · Dubai",
+  },
+  {
+    period: "Community Care",
+    title: "Water for Strays",
+    description:
+      "Water pots placed for stray animals, extending the same principle of care to communities beyond the human one, through peak summer heat.",
+    location: "UAE & India",
+  },
+];
 
 export default function OurWork() {
   return (
-    <section id="our-work" className="relative overflow-hidden bg-white">
-      <div className="grid lg:grid-cols-[42%_58%] min-h-[340px] lg:min-h-[360px]">
-        {/* Left - Photo */}
-        <div className="relative h-72 lg:h-auto">
-          <img
-            src={BOY_IMAGE}
-            alt="Child refilling a bottle at a JalSeva water station"
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
-
-        {/* Right - Content panel */}
-        <div className="relative bg-gradient-to-br from-sky-light to-sky-medium lg:rounded-r-[56px] lg:rounded-tl-none overflow-hidden px-6 py-10 md:px-12 lg:pl-12 lg:pr-0 flex items-center">
-          <div className="relative z-10 max-w-md lg:max-w-[420px]">
-            <p className="text-sm font-semibold tracking-[0.15em] uppercase text-primary mb-3">
-              Our Work
-            </p>
-
-            <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-dark-blue mb-5">
-              Water Access.
-              <br />
-              Brighter Tomorrows.
-            </h2>
-
-            <p className="text-text-body leading-relaxed text-[15px] mb-7">
-              JalSeva combines reusable bottles with accessible filtered-water
-              infrastructure, encouraging people to refill rather than
-              repeatedly purchase single-use bottled water. In schools, that
-              means clean tanks, filters and coolers that are looked after all
-              year.
-            </p>
-
-            <a
-              href="#schools"
-              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-colors"
-            >
-              Learn More
-              <ArrowRight className="w-4 h-4" />
-            </a>
+    <section id="our-work" className="scroll-mt-16 py-12 md:py-14 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-[1fr_2fr] gap-8 lg:gap-14 items-stretch">
+          {/* Left - Photo */}
+          <div className="relative h-72 sm:h-96 lg:h-auto overflow-hidden  bg-sky-medium">
+            <Image
+              src="/jalseva.jpeg"
+              alt="Ved Kedia with security staff holding the bottles they received"
+              fill
+              sizes="(min-width: 1024px) 33vw, 100vw"
+              className="object-cover object-[50%_65%]"
+            />
           </div>
 
-          {/* Decorative globe-in-drop */}
-          <GlobeDrop className="hidden lg:block absolute right-6 top-10 w-40 h-auto" />
+          {/* Right - Content */}
+          <div>
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-2">
+              On the Ground
+            </p>
+            <h2 className="text-2xl md:text-3xl font-extrabold leading-tight text-dark-blue">
+              From a bottle in hand to water in the wall
+            </h2>
+            <p className="mt-3 text-sm md:text-[15px] text-text-muted leading-relaxed max-w-2xl">
+              Jal Seva&apos;s work has evolved from immediate relief to
+              permanent infrastructure — each project addressing a gap the last
+              one uncovered.
+            </p>
 
-          {/* Small solid drop, bottom */}
-          <svg
-            viewBox="0 0 60 80"
-            className="hidden lg:block absolute right-44 -bottom-2 w-14 h-auto"
-            aria-hidden="true"
-          >
-            <path
-              d="M30 2C30 2 4 36 4 54a26 26 0 0 0 52 0C56 36 30 2 30 2Z"
-              fill="#d3ecfa"
-            />
-          </svg>
-
-          {/* Circular inset photo */}
-          <div className="hidden lg:block absolute right-0   bottom-3 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-md">
-            <img
-              src={STATION_IMAGE}
-              alt="Filtered water refill station"
-              className="w-full h-full object-cover"
-            />
+            {/* Projects, divided by lines */}
+            <ul className="mt-6 border-t border-sky-100">
+              {projects.map((project) => (
+                <li
+                  key={project.title}
+                  className="grid sm:grid-cols-[9.5rem_1fr] gap-x-6 gap-y-1 py-5 border-b border-sky-100 last:border-b-0 last:pb-0"
+                >
+                  <p className="text-xs font-bold tracking-[0.2em] uppercase text-primary sm:pt-1.5">
+                    {project.period}
+                  </p>
+                  <div>
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                      <h3 className="text-lg md:text-xl font-extrabold text-dark-blue">
+                        {project.title}
+                      </h3>
+                      <p className="flex items-center gap-1.5 text-xs font-semibold text-dark-blue">
+                        <MapPin className="w-3.5 h-3.5 text-primary" />
+                        {project.location}
+                      </p>
+                    </div>
+                    <p className="mt-1.5 text-sm md:text-[15px] text-text-muted leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

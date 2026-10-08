@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Origin from "@/components/Origin";
 import ImpactNumbers from "@/components/ImpactNumbers";
 import ThreePillars from "@/components/ThreePillars";
 import OurWork from "@/components/OurWork";
 import SchoolWater from "@/components/SchoolWater";
+import Journey from "@/components/Journey";
 import HowItWorks from "@/components/HowItWorks";
 import BeyondPeople from "@/components/BeyondPeople";
 import Ambassadors from "@/components/Ambassadors";
@@ -19,10 +21,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <ImpactNumbers />
+                <ImpactNumbers />
+
+        <Origin />
         <ThreePillars />
         <OurWork />
-        <SchoolWater />
+        <Journey />
         <HowItWorks />
         <BeyondPeople />
         <Ambassadors />

@@ -29,32 +29,34 @@ export default function Hero() {
           <div className="space-y-6 lg:space-y-8 py-8">
             {/* Tagline */}
             <div className="flex items-center gap-2 text-sm font-semibold tracking-widest text-primary uppercase">
-              <Droplets className="w-4 h-4" />
-              Refill · Reuse · Reduce
+              <Droplets className="w-4 h-4 shrink-0" />
+              Youth-led · Founded 2022 · UAE &amp; India
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.08] text-dark-blue">
-              Clean Water
-              <br />
-              <span className="text-primary">for a Brighter</span>
-              <br />
-              Tomorrow.
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-[1.12] text-dark-blue">
+              One discarded bottle asked a question.
+              <span className="block text-primary">
+                Water for everyone is our answer.
+              </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg text-text-muted max-w-lg leading-relaxed">
-              A youth-led initiative creating practical solutions for cleaner
-              water access, responsible consumption and stronger communities.
+            <p className="text-base md:text-lg text-text-body max-w-lg leading-relaxed">
+              Jal Seva began the moment a gardener in Dubai searched a garbage
+              bin for a bottle to hold drinking water. Since then, it has grown
+              into a youth movement built on three pillars Reuse, Refill,
+              Responsibility reaching more than 26,000 lives across the UAE
+              and India.
             </p>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="#impact"
+                href="#about"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all hover:shadow-lg hover:shadow-primary/25"
               >
-                Explore Our Impact
+                Follow the Movement
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -63,20 +65,6 @@ export default function Hero() {
               >
                 Get Involved
               </a>
-            </div>
-
-            {/* Tags */}
-            <div className="flex flex-wrap items-center gap-3 text-xs font-medium text-text-muted pt-2">
-              {["Youth-led", "Water", "Sustainability", "Community"].map(
-                (tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 bg-white/70 backdrop-blur-sm rounded-full border border-gray-200"
-                  >
-                    {tag}
-                  </span>
-                )
-              )}
             </div>
           </div>
 
