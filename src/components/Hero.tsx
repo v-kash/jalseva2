@@ -53,7 +53,7 @@ export default function Hero() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <a
-                href="#about"
+                href="https://www.instagram.com/esgjalseva/"
                 className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all hover:shadow-lg hover:shadow-primary/25"
               >
                 Follow the Movement
