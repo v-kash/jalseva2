@@ -38,7 +38,7 @@ const slides: Slide[] = [
     location: "Indore · India",
     title: ["Bringing Clean Water", "to School"],
     body: "Two water filters and coolers were installed in the same school in Indore, helping students access safe and cooled drinking water every day.",
-    stats: [{ value: "02", label: "Water filters & coolers" }],
+    stats: [{ value: "Water filters & coolers", label: "Installed" }],
     image: "/2023.jpeg",
     alt: "Drinking-water taps at a school in Indore, decorated with balloons and marigold garlands",
   },
@@ -67,9 +67,7 @@ const slides: Slide[] = [
   title: ["Six Coolers.", "Five Schools."],
   body: "Six water filters and coolers were installed across five different schools in India, bringing reliable access to safe, cooled drinking water to more students.",
   stats: [
-    { value: "06", label: "Water filters & coolers" },
-    { value: "05", label: "Schools" },
-  ],
+{ value: "Water filters & coolers", label: "Installed" }  ],
   image: "/2026-india-coolers.jpeg",
   alt: "Water filter and cooler installation at a school in India",
   position: "object-[50%_40%]",
@@ -94,7 +92,7 @@ const slides: Slide[] = [
   title: ["Four Coolers.", "Permanent Access."],
   body: "Four water filters and coolers were installed in Dubai, expanding Jal Seva's work from immediate support toward permanent access to safe drinking water.",
   stats: [
-    { value: "04", label: "Water filters & coolers" },
+{ value: "Water filters & coolers", label: "Installed" } ,
     { value: "Dubai", label: "Permanent infrastructure" },
   ],
   image: "/2026-dubai-coolers.jpeg",

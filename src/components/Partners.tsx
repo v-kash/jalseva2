@@ -14,7 +14,7 @@ const groups = [
   {
     icon: Users,
     label: "Community / Implementation Partners",
-    partners: ["RJS Seva Sadan"],
+    partners: ["RJS Seva Sadan", "Community Impact Partners"],
   },
 ];
 
